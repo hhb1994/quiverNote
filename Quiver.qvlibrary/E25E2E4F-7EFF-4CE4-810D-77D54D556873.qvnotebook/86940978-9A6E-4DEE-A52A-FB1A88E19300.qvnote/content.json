@@ -1,0 +1,32 @@
+{
+  "title": "ssr",
+  "cells": [
+    {
+      "type": "text",
+      "data": "1.安装 SSR 脚本"
+    },
+    {
+      "type": "code",
+      "language": "sh",
+      "data": "sudo yum update\nsudo yum install wget\nwget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && sudo bash ssr.sh"
+    },
+    {
+      "type": "text",
+      "data": "<div>2.centOS6 安装 spped server</div>"
+    },
+    {
+      "type": "code",
+      "language": "sh",
+      "data": "#如果是kvm还是xen或者vmare则可以装锐速，如果是Openvz，则不可装锐速。\nuanme -r #查看当前内核版本\n# centos 支持安装锐速的内核: 2.6.32-504.3.3.el6.x86_64\n\nrpm -ivh http://file.asuhu.com/kernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm\nrpm -ivh http://file.asuhu.com/kernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm --force\n\nrpm -qa | grep kernel #查看是否安装成功\nreboot #重启VPS\nuname -r #当前使用内核版本"
+    },
+    {
+      "type": "text",
+      "data": "3.centOS7 安装 speed server(不推荐)"
+    },
+    {
+      "type": "code",
+      "language": "sh",
+      "data": "#CentOS 7支持安装锐速的内核：3.10.0–327.el7.x86_64\nrpm -ivh http://xz.wn789.com/CentOSkernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force\nrpm -qa | grep kernel #查看内核是否安装成功\nreboot #重启VPS\nuname -r #当前使用内核版本"
+    }
+  ]
+}

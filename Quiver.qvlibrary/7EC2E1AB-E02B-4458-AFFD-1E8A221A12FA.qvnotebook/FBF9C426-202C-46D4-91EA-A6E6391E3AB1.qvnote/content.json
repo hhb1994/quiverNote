@@ -1,0 +1,9 @@
+{
+  "title": "nodejs",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<h1 class=\"title-article\" style=\"box-sizing: inherit; outline: 0px; padding: 0px; margin: 0.67em 0px; font-size: 24px; font-family: &quot;Microsoft YaHei&quot;, &quot;SF Pro Display&quot;, Roboto, Noto, Arial, &quot;PingFang SC&quot;, sans-serif; overflow-wrap: break-word; color: rgba(0, 0, 0, 0.74902); font-variant-ligatures: common-ligatures; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\">npx http-server 在当前目录一键开启静态服务器</h1>"
+    }
+  ]
+}

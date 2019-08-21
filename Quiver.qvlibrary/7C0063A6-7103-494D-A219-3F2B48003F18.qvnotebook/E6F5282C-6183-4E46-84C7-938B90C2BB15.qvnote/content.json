@@ -1,0 +1,14 @@
+{
+  "title": "租户 logo 配置",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "在`10.20.54.26/27/28`三个节点的`/sobeyhive/app/omniportal-1.0.0/webapps/portal/StaticResources/GlobalRs/tb`目录下添加 logo 文件,logo文件要求jpg 格式,如果是 png 格式改一下后缀名.\n\n\n例如\n\n`scp ./zrtg_zjzs.jpg root@10.20.54.26:/sobeyhive/app/omniportal-1.0.0/webapps/portal/StaticResources/GlobalRs/tb/`\n"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "let new= new Tast()"
+    }
+  ]
+}

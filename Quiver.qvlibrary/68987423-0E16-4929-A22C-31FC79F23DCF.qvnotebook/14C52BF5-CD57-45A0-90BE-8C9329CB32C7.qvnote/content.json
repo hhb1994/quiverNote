@@ -1,0 +1,17 @@
+{
+  "title": "微信小程序代码构成",
+  "cells": [
+    {
+      "type": "text",
+      "data": "JSON 配置"
+    },
+    {
+      "type": "markdown",
+      "data": ">app.json 是当前小程序的全局配置，包括了小程序的所有页面路径、界面表现、网络超时时间、底部 tab 等。QuickStart 项目里边的 app.json 配置内容如下：\n\n\n"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

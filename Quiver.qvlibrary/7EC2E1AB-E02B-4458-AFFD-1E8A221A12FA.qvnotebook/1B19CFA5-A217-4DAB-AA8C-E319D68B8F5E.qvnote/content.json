@@ -1,0 +1,9 @@
+{
+  "title": "git",
+  "cells": [
+    {
+      "type": "text",
+      "data": "清除 git 缓存<div><br></div><div><br></div><div><span style=\"color: rgb(73, 73, 73); font-family: &quot;Microsoft YaHei&quot;, &quot;SF Pro Display&quot;, Roboto, Noto, Arial, &quot;PingFang SC&quot;, sans-serif; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\">git rm -r --cached .</span><br></div>"
+    }
+  ]
+}

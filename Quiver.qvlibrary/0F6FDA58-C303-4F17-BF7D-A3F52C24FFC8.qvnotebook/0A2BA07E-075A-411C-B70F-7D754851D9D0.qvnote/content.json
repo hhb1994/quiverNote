@@ -1,0 +1,35 @@
+{
+  "title": "tips",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<br>"
+    },
+    {
+      "type": "text",
+      "data": "<div><br></div><div><br></div><div><br></div><div>1. JavaScript 获取带\"-\"的属性</div>"
+    },
+    {
+      "type": "code",
+      "language": "sh",
+      "data": "res.headers[\"content-type\"]"
+    },
+    {
+      "type": "text",
+      "data": "<b>2.CR/LF</b><ul><li>Dos 和 windows 采用<i><b>“回车+换行，CR/LF”</b></i>表示下一行(\\n\\r)；</li><li>UNIX/Linux 采用<i><b>“换行符，LF”</b></i>表示下一行(\\n)；</li><li>苹果机(MAC OS 系统)则采用<i><b>“回车符，CR”</b></i>表示下一行(\\r)。</li></ul><b>Unix系统里，每行结尾只有“&lt;换行&gt;”，即\"\\n\"；</b><b>Mac系统里，每行结尾是“&lt;回车&gt;”，即\"\\r\"；</b><b>Windows系统里面，每行结尾是“&lt;换行&gt;&lt;回车 &gt;”，即“\\n\\r”。</b>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "docker<div><br></div><div><br></div><div>docker container run &nbsp;--rm &nbsp;-p 8000:3000 -it &nbsp;han-test &nbsp;/bin/bash<br></div>"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "# mongo导出数据\n\n\n\n`mongoexport --db schedule  --collection states --out ./Desktop/states.json`"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "docker",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "#后端koa\n\n## dockerfile:\n\n    FROM node:11.6.0\n    \n    COPY . /app\n    WORKDIR /app\n    RUN npm install\n    EXPOSE 3000\n    CMD node ./app.js\n    \n\n## 构建 docker 镜像\n\n  docker build -t hanhb1994924/nodekoa .\n  \n  \n  -t 代表名称\n  . 代表当前目录\n  \n  \n## 运行容器\n\n  docker run --name nodekoa -d -p 3000:3000  --rm hanhb1994924/nodekoa\n  \n"
+    },
+    {
+      "type": "markdown",
+      "data": "# 前端页面(nginx)\n\n\n## dockerfile\n\n\n    FROM nginx\n    \n    COPY ./dist /usr/share/nginx/html\n    \n    \n## 构建 docker 镜像\n  docker build -t hanhb1994924/schedule .\n  \n## 运行容器 \n  docker run --name schedule -d -p 8000:80 --rm hanhb1994924/schedule\n  \n\n"
+    },
+    {
+      "type": "markdown",
+      "data": "# 数据库\n\ndocker run --rm --name mongo -p 27017:27017 -v /Users/hanhongbin/data/db:/data/db  -d mongo:4.0.4"
+    },
+    {
+      "type": "text",
+      "data": "<div>构建镜像&nbsp;</div><div>&nbsp;docker build -t [name] . &nbsp;&nbsp;</div><div>&nbsp; -t 代表名称</div><div>&nbsp; . 代表当前目录</div><div><br></div><div>运行容器</div><div>docker run -p 3000:3000 —name [containerName] —rm [imageName]</div><div><br></div><div><br></div><div>&nbsp;</div>进入容器 &nbsp;==&gt; &nbsp;&nbsp;<span style=\"color: rgb(255, 255, 255);\">docker exec -it [containerId] /bin/bash</span><div><span style=\"color: rgb(255, 255, 255);\"><br></span></div><div><span style=\"color: rgb(255, 255, 255);\"><br></span></div>"
+    }
+  ]
+}

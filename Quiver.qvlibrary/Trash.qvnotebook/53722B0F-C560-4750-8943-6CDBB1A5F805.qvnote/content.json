@@ -1,0 +1,9 @@
+{
+  "title": "Untitled Note",
+  "cells": [
+    {
+      "type": "text",
+      "data": "hexo clean<div><br></div><div>hexo g</div><div><br></div><div>hexo &nbsp;d&nbsp;</div><div><br></div><div>git add .</div><div><br></div><div>git commit -m \"add article\"</div><div><br></div><div>git push origin</div>"
+    }
+  ]
+}

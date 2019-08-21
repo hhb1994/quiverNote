@@ -1,0 +1,9 @@
+{
+  "title": "tcp/ip",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## IP地址类型\n\nIP地址是分类型的，有：\n\n* A类：`1-127.xxx.xxx.xxx / 8`\n* B类：`128-191.xxx.xxx.xxx / 16`\n* C类：`192-223.xxx.xxx.xxx / 24`\n* D类：`224-239.xxx.xxx.xxx`\n* E类：`240-255.xxx.xxx.xxx`\n* loopback：`127.xxx.xxx.xxx`\n\n不过我们一般都只会接触到A、B、C三类加一个loopback地址。\n\n## 私有IP地址\n\n在A、B、C三类IP地址中有部分地址保留为私有地址，Internet上的网络设备均不会接受、发送或者转发属于私有地址的源IP地址或目的IP地址。私有IP地址的范围是：\n\n* A类：`10.0.0.0` ~ `10.255.255.255`\n* B类：`172.16.0.0` ~ `172.31.255.255`\n* C类：`192.168.0.0` ~ `192.168.255.255`"
+    }
+  ]
+}

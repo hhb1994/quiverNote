@@ -1,0 +1,9 @@
+{
+  "title": "mac ",
+  "cells": [
+    {
+      "type": "text",
+      "data": "应用无法安装,没有来自任何来源<div><br></div><div>sudo spctl —master-disable</div>"
+    }
+  ]
+}

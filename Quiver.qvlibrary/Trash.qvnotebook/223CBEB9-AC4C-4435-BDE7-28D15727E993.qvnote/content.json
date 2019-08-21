@@ -1,0 +1,9 @@
+{
+  "title": "上传代码到服务器",
+  "cells": [
+    {
+      "type": "text",
+      "data": "scp -r 22 dist/* root@35.234.36.117:/usr/share/nginx/html/dist<div><br></div>"
+    }
+  ]
+}
