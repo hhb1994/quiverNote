@@ -1,0 +1,10 @@
+{
+  "title": "JavaScript 监听键盘事件",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// 添加监听事件\n\nwindow.addEventListener(\"keydown\", key.downHandler.bind(key), false);\n\n\n\n// 优化版代码\n\nfunction keyboard(keyCode) {\n  let key = {};\n  key.code = keyCode;\n  key.isDown = false;\n  key.isUp = true;\n  key.press = undefined;\n  key.release = undefined;\n  //The `downHandler`\n  key.downHandler = event => {\n    if (event.keyCode === key.code) {\n      if (key.isUp && key.press) {\n        key.press();\n        key.isDown = true;\n        key.isUp = false;\n      }\n    }\n    event.preventDefault();\n  };\n  //The `upHandler`\n  key.upHandler = event => {\n    if (event.keyCode === key.code) {\n      if (key.isDown && key.release) {\n        key.release();\n        key.isDown = false;\n        key.isUp = true;\n      }\n    }\n    event.preventDefault();\n  };\n  //Attach event listeners\n  window.addEventListener(\"keydown\", key.downHandler.bind(key), false);\n  window.addEventListener(\"keyup\", key.upHandler.bind(key), false);\n  return key;\n}"
+    }
+  ]
+}

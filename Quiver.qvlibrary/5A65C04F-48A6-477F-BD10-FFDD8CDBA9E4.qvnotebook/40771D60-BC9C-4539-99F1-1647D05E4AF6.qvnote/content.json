@@ -1,0 +1,10 @@
+{
+  "title": "下载文件 同时兼容 ie",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "\n//下载点击触发事件\nvar blob = new Blob([res.data], {\n    type: \"application/vnd.ms-excel;charset=ISO8859-1\"\n  });\n  let fileName = res.headers[\"content-disposition\"].split(\"filename=\")[1];\n  if (\"msSaveOrOpenBlob\" in navigator) {\n    window.navigator.msSaveOrOpenBlob(blob, `${fileName}`);\n  } else {\n    var downloadElement = document.createElement(\"a\");\n    var href = window.URL.createObjectURL(blob);\n    downloadElement.href = href;\n    downloadElement.download = `${fileName}`;\n    document.body.appendChild(downloadElement);\n    downloadElement.click();\n    document.body.removeChild(downloadElement);\n    window.URL.revokeObjectURL(href);\n  }"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "postman",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## post 传文件\n输入url.\n选择Body.\n选中Body中的form-data.\n添加字段名为file的key, 选择类型为File.\n点击选择文件添加文件.\n检查Headers中的content-type. 如果有值, 则清空."
+    }
+  ]
+}

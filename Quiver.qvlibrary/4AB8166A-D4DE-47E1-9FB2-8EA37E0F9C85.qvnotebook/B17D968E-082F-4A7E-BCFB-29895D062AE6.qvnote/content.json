@@ -1,0 +1,9 @@
+{
+  "title": "快捷键",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Sip\n## 显示取色按钮\n  command(⌘) + option(⌥) ＋ control(⌃) + p\n  \n## 显示/隐藏侧边栏\n  command(⌘) + option(⌥) ＋ control(⌃) + d"
+    }
+  ]
+}

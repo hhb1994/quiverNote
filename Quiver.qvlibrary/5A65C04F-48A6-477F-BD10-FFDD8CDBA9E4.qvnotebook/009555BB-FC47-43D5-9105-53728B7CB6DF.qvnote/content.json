@@ -1,0 +1,14 @@
+{
+  "title": "获取 url 中的参数",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## 使用原生 JavaScript"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "export default {\n  getUrlKey: function(name) {\n    return (\n      decodeURIComponent(\n        (new RegExp(\"[?|&]\" + name + \"=\" + \"([^&;]+?)(&|#|;|$)\").exec(location.href) || [, \"\"])[1].replace(/\\+/g, \"%20\")\n      ) || null\n    );\n  }\n};\n//使用↓\n// import utils from '../../assets/scripts/utils'\n// let id = utils.getUrlKey('id')\n// console.log(id)\n// url为http://192.168.1.12:8080/#/detail/?id=123时，可以得到id为123\n\n"
+    }
+  ]
+}

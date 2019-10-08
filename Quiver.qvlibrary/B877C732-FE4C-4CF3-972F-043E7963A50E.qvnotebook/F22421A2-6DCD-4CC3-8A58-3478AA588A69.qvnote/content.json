@@ -1,0 +1,10 @@
+{
+  "title": "监听修改/ video 播放进度",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "\n//监听 video 进度\nlet video = document.getElementById(\"video\");\nvideo.addEvnetListener(\"timeupdate\",()=>{\n   console.log(video.currentTime)\n})\n//跳转到指定时间(单位为 s)\nvideo.currentTime = 20s\n"
+    }
+  ]
+}

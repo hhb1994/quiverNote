@@ -1,0 +1,10 @@
+{
+  "title": "获取毫秒转化为小时:分钟:秒:毫秒",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "\nfunction addZero(val) {\n  return val > 9 ? val : \"0\" + val;\n}\n\nformatMillisecond(ms) {\n    let hour = \"00\",\n      minute = \"00\",\n      second = \"00\";\n    let milli = ms % 1000;\n    let tem1 = parseInt(ms / 1000);\n    if (tem1 < 60 && tem1 >= 0) {\n      return `${hour}:${minute}:${addZero(tem1)}.${milli}`;\n    } else if (tem1 >= 60 && tem1 < 3600) {\n      return `${hour}:${addZero(parseInt(tem1 / 60))}:${addZero(tem1 % 60)}.${milli}`;\n    } else {\n      return `${addZero(parseInt(tem1 / 3600))}:${addZero(parseInt(tem1 / 60) % 60)}:${addZero(tem1 % 60)}.${milli}`;\n    }\n  }"
+    }
+  ]
+}
