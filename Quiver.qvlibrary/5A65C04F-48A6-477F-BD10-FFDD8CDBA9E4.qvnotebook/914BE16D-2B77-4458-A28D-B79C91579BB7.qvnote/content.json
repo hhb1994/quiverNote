@@ -1,0 +1,10 @@
+{
+  "title": "JavaScript 时间转化为 mysql datetime",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "new Date()\n            .toISOString()\n            .slice(0, 19)\n            .replace(\"T\", \" \")"
+    }
+  ]
+}

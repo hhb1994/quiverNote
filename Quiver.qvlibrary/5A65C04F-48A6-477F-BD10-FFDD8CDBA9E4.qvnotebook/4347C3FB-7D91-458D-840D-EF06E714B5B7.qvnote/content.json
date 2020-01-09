@@ -1,0 +1,10 @@
+{
+  "title": "获取浏览器类型",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "getExplore(agent) {\n      var Sys = {};\n      var ua = agent.toLowerCase();\n      var s;\n      (s = ua.match(/rv:([\\d.]+)\\) like gecko/))\n        ? (Sys.ie = s[1])\n        : (s = ua.match(/msie ([\\d\\.]+)/))\n        ? (Sys.ie = s[1])\n        : (s = ua.match(/edge\\/([\\d\\.]+)/))\n        ? (Sys.edge = s[1])\n        : (s = ua.match(/firefox\\/([\\d\\.]+)/))\n        ? (Sys.firefox = s[1])\n        : (s = ua.match(/(?:opera|opr).([\\d\\.]+)/))\n        ? (Sys.opera = s[1])\n        : (s = ua.match(/chrome\\/([\\d\\.]+)/))\n        ? (Sys.chrome = s[1])\n        : (s = ua.match(/version\\/([\\d\\.]+).*safari/))\n        ? (Sys.safari = s[1])\n        : 0;\n      // 根据关系进行判断\n      if (Sys.ie) return \"IE: \" + Sys.ie;\n      if (Sys.edge) return \"EDGE: \" + Sys.edge;\n      if (Sys.firefox) return \"Firefox: \" + Sys.firefox;\n      if (Sys.chrome) return \"Chrome: \" + Sys.chrome;\n      if (Sys.opera) return \"Opera: \" + Sys.opera;\n      if (Sys.safari) return \"Safari: \" + Sys.safari;\n      return \"Unkonwn\";\n    }"
+    }
+  ]
+}

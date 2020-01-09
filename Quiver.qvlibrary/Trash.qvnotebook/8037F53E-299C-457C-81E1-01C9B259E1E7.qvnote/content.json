@@ -1,0 +1,9 @@
+{
+  "title": "代码上传",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><span style=\"color: rgb(255, 255, 255);\"><br></span></div><span style=\"color: rgb(255, 255, 255);\"><div>上传代码到 gcp</div><div><span style=\"color: rgb(255, 255, 255);\"><br></span></div>scp -r 22 dist/* root@35.234.36.117:/usr/share/nginx/html/dist</span><div><span style=\"color: rgb(255, 255, 255);\"><br></span></div>"
+    }
+  ]
+}
