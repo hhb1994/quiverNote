@@ -1,0 +1,10 @@
+{
+  "title": "根据时间戳获取格式化的日期",
+  "cells": [
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": " return new Date(this.totalInfo.updateTime + 8 * 3600 * 1000)\n          .toJSON()\n          .substr(0, 19)\n          .replace(\"T\", \" \")\n          .replace(/-/g, \".\");\n          \n          \n// "
+    }
+  ]
+}

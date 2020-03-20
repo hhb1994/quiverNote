@@ -1,6 +1,18 @@
 {
-  "cells" : [
-
-  ],
-  "title" : "Untitled Note"
+  "title": "linux",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "code",
+      "language": "sh",
+      "data": "ps -ef | grep frpc | grep -v grep | cut -c 9-15 | xargs kill -s 9"
+    },
+    {
+      "type": "markdown",
+      "data": "\"ps -ef\" 查看进程\n\n“grep frpc”的输出结果是，所有含有关键字“frpc”的进程。\n\n“grep -v grep”是在列出的进程中去除含有关键字“grep”的进程。\n\n“cut -c 9-15”是截取输入行的第9个字符到第15个字符，而这正好是进程号PID。\n\n“xargs kill -s 9”中的xargs命令是用来把前面命令的输出结果（PID）作为“kill -s 9”命令的参数，并执行该命令。“kill -s 9”会强行杀掉指定进程"
+    }
+  ]
 }

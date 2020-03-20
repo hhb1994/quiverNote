@@ -1,0 +1,9 @@
+{
+  "title": "URL 与 URI",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "* 统一资源标志符 URI\n\n* 统一资源定位符URL\n\n\n**url 是 uri 的子集**\n\n举个例子:\n\n同样是代表一个人,\n\n身份证号(uri)\n\n和地址(中国/浙江/杭州/某人)url \n\n都可以代表一个人"
+    }
+  ]
+}
